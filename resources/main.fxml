@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examresult.controller.SearchController">
+    <top>
+        <ToolBar>
+            <Label text="Consulter Résultats d'Examen" />
+        </ToolBar>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10" padding="10">
+            <TextField fx:id="matriculeField" promptText="Entrez votre matricule" />
+            <Button text="Rechercher" onAction="#handleSearch" />
+            <Label fx:id="resultLabel" text="" />
+            <Button fx:id="detailsButton" text="Afficher les détails" onAction="#handleShowDetails" disable="true" />
+        </VBox>
+    </center>
+</BorderPane>

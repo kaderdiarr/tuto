@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.examresult.controller.DetailsController">
+    <top>
+        <ToolBar>
+            <Label text="Détails de l'Étudiant" />
+        </ToolBar>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10" padding="10">
+            <Label fx:id="nomLabel" text="Nom : " />
+            <Label fx:id="prenomLabel" text="Prénom : " />
+            <Label fx:id="dateNaissanceLabel" text="Date de Naissance : " />
+            <Label fx:id="ecoleLabel" text="École : " />
+            <Label fx:id="moyenneLabel" text="Moyenne : " />
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Retour" onAction="#handleBack" />
+    </bottom>
+</BorderPane>
